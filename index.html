@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer doc HTML</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Información del usuario</legend>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" required />
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" />
+        <label for="range">Rango</label>
+        <input type="range" name="range" id="range" min="5" max="50" />
+        <label for="files">Archivos</label>
+        <input type="file" name="files" id="files" />
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" />
+        <input type="radio" name="tecnologias" id="html" />
+        <label for="html">HTML</label>
+        <input type="radio" name="tecnologias" id="JS" />
+        <label for="JS">JS</label>
+        <input list="midatalist" />
+        <datalist id="midatalist">
+          <option value="valor1"></option>
+          <option value="valor2"></option>
+          <option value="valor3"></option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>Información adicional</legend>
+        <input type="checkbox" name="dev" id="dev" value="dev" />
+        <label for="dev">Desarrollador</label>
+        <input type="checkbox" name="design" id="design" value="design" />
+        <label for="design">Diseñador</label>
+        <select name="select" id="select" size="3">
+          <option value="valor1">Valor 1</option>
+          <option value="valor2" selected>Valor 2</option>
+          <option value="valor3">Valor 3</option>
+        </select>
+        <textarea
+          name="textarea"
+          id="area"
+          cols="30"
+          rows="10"
+          style="resize: none"
+        ></textarea>
+      </fieldset>
+      <button type="button">Boton</button>
+
+      <input type="submit" value="Enviar" />
+    </form>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pedro</td>
+          <td>Plasencia</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>Pedro</td>
+          <td>Plasencia</td>
+          <td>31</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Pedro</td>
+          <td>Plasencia</td>
+          <td>31</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    
+  </body>
+</html>
